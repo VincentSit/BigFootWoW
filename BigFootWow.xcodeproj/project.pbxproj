@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93235867205C67F6003F25AE /* ConsoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93235866205C67F6003F25AE /* ConsoleView.swift */; };
+		93536BC0205A00AC00B69682 /* Installer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93536BBF205A00AC00B69682 /* Installer.swift */; };
 		935974F92059E30300927468 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935974F82059E30300927468 /* AppDelegate.swift */; };
 		935974FB2059E30300927468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935974FA2059E30300927468 /* Assets.xcassets */; };
-		935974FE2059E30300927468 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 935974FC2059E30300927468 /* MainMenu.xib */; };
+		935975072059E52300927468 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935975062059E52300927468 /* ViewController.swift */; };
+		935975092059ED2E00927468 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935975082059ED2E00927468 /* Application.swift */; };
+		B7F3DE56D2E1D88F9FB516E8 /* Pods_BigFootWow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3545AC5EB2C47B765724806D /* Pods_BigFootWow.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3545AC5EB2C47B765724806D /* Pods_BigFootWow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigFootWow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40FDAFB96B3C067552EF4638 /* Pods-BigFootWow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigFootWow.release.xcconfig"; path = "Pods/Target Support Files/Pods-BigFootWow/Pods-BigFootWow.release.xcconfig"; sourceTree = "<group>"; };
+		5CB27161D339E914D45EA420 /* Pods-BigFootWow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigFootWow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BigFootWow/Pods-BigFootWow.debug.xcconfig"; sourceTree = "<group>"; };
+		93235866205C67F6003F25AE /* ConsoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleView.swift; sourceTree = "<group>"; };
+		93536BBF205A00AC00B69682 /* Installer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Installer.swift; sourceTree = "<group>"; };
 		935974F52059E30300927468 /* BigFootWow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigFootWow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		935974F82059E30300927468 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		935974FA2059E30300927468 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		935974FD2059E30300927468 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		935974FF2059E30300927468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		935975002059E30300927468 /* BigFootWow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BigFootWow.entitlements; sourceTree = "<group>"; };
+		935975062059E52300927468 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		935975082059ED2E00927468 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7F3DE56D2E1D88F9FB516E8 /* Pods_BigFootWow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DAC96D7DD424557F8254C86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CB27161D339E914D45EA420 /* Pods-BigFootWow.debug.xcconfig */,
+				40FDAFB96B3C067552EF4638 /* Pods-BigFootWow.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		935974EC2059E30300927468 = {
 			isa = PBXGroup;
 			children = (
 				935974F72059E30300927468 /* BigFootWow */,
 				935974F62059E30300927468 /* Products */,
+				3DAC96D7DD424557F8254C86 /* Pods */,
+				CA56876AC11113D1D88D780E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,13 +72,23 @@
 		935974F72059E30300927468 /* BigFootWow */ = {
 			isa = PBXGroup;
 			children = (
+				935975082059ED2E00927468 /* Application.swift */,
 				935974F82059E30300927468 /* AppDelegate.swift */,
+				935975062059E52300927468 /* ViewController.swift */,
+				93235866205C67F6003F25AE /* ConsoleView.swift */,
+				93536BBF205A00AC00B69682 /* Installer.swift */,
 				935974FA2059E30300927468 /* Assets.xcassets */,
-				935974FC2059E30300927468 /* MainMenu.xib */,
 				935974FF2059E30300927468 /* Info.plist */,
-				935975002059E30300927468 /* BigFootWow.entitlements */,
 			);
 			path = BigFootWow;
+			sourceTree = "<group>";
+		};
+		CA56876AC11113D1D88D780E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3545AC5EB2C47B765724806D /* Pods_BigFootWow.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -67,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 935975032059E30300927468 /* Build configuration list for PBXNativeTarget "BigFootWow" */;
 			buildPhases = (
+				C98AB845FDDA83F2D6C33268 /* [CP] Check Pods Manifest.lock */,
 				935974F12059E30300927468 /* Sources */,
 				935974F22059E30300927468 /* Frameworks */,
 				935974F32059E30300927468 /* Resources */,
+				5CF0429ED66E8D9693F73C53 /* [CP] Embed Pods Frameworks */,
+				F115833EF051687AF0503972 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -93,6 +127,11 @@
 					935974F42059E30300927468 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -101,8 +140,6 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
-				Base,
 			);
 			mainGroup = 935974EC2059E30300927468;
 			productRefGroup = 935974F62059E30300927468 /* Products */;
@@ -120,39 +157,94 @@
 			buildActionMask = 2147483647;
 			files = (
 				935974FB2059E30300927468 /* Assets.xcassets in Resources */,
-				935974FE2059E30300927468 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5CF0429ED66E8D9693F73C53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BigFootWow/Pods-BigFootWow-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+				"${BUILT_PRODUCTS_DIR}/Zip/Zip.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zip.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BigFootWow/Pods-BigFootWow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C98AB845FDDA83F2D6C33268 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BigFootWow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F115833EF051687AF0503972 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BigFootWow/Pods-BigFootWow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		935974F12059E30300927468 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				935975092059ED2E00927468 /* Application.swift in Sources */,
+				93235867205C67F6003F25AE /* ConsoleView.swift in Sources */,
+				93536BC0205A00AC00B69682 /* Installer.swift in Sources */,
+				935975072059E52300927468 /* ViewController.swift in Sources */,
 				935974F92059E30300927468 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		935974FC2059E30300927468 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				935974FD2059E30300927468 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		935975012059E30300927468 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -197,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -210,6 +302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -248,7 +341,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -257,9 +350,9 @@
 		};
 		935975042059E30300927468 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CB27161D339E914D45EA420 /* Pods-BigFootWow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = BigFootWow/BigFootWow.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
@@ -274,9 +367,9 @@
 		};
 		935975052059E30300927468 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40FDAFB96B3C067552EF4638 /* Pods-BigFootWow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = BigFootWow/BigFootWow.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";

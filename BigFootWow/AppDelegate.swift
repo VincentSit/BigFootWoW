@@ -11,17 +11,22 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-  @IBOutlet weak var window: NSWindow!
-
+  var window: NSWindow!
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
-    // Insert code here to initialize your application
+    let windowSize = CGSize(width: 480, height: 280)
+    let screenSize = NSScreen.main!.frame.size
+    let screenCenter = NSPoint(x: (screenSize.width - windowSize.width) / 2.0,
+                               y: (screenSize.height - windowSize.height) / 2.0)
+    window = NSWindow(contentRect: NSRect(origin: screenCenter, size: windowSize),
+                      styleMask: [.closable, .miniaturizable, .titled],
+                      backing: .buffered,
+                      defer: false)
+    window.backgroundColor = .white
+    window.title = "魔兽大脚 for Mac"
+    window.isMovableByWindowBackground = true
+    window.makeKeyAndOrderFront(self)
+
+    window.contentViewController = ViewController()
   }
-
-  func applicationWillTerminate(_ aNotification: Notification) {
-    // Insert code here to tear down your application
-  }
-
-
 }
-
