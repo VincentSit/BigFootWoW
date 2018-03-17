@@ -17,8 +17,8 @@ macOS 10.11 及以上系统版本。仅在 macOS 10.13 测试过。
 - 如果不勾选该选项，在解压过程中，若两个文件或目录的名称相同，新的会覆盖旧的。也就是说会保留你额外添加的，不包含在大脚里的那些插件，但其他的全部会覆盖掉。
 
 ### 下载
-[百度盘](https://pan.baidu.com/s/1aSfV8c6kTtM1Oc_1vrrTjA)
-[GitHub Release](https://github.com/VincentSit/BigFootWoW/releases)
+- [百度盘](https://pan.baidu.com/s/1aSfV8c6kTtM1Oc_1vrrTjA)
+- [GitHub Release](https://github.com/VincentSit/BigFootWoW/releases)
 
 其他源下载请注意安全。
 
